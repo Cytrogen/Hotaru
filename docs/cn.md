@@ -16,18 +16,18 @@
 # Hotaru
 
 <details>
-  <summary>Directory</summary>
+  <summary>目录</summary>
   
 - [Hotaru](#hotaru)
-  - [Description](#description)
-    - [Guide](#guide)
-  - [Design](#design)
+  - [简介](#简介)
+    - [教程](#教程)
+  - [设计](#设计)
 </details>
 
-## Description
+## 简介
 
-> Hotaru is a web-based instant messaging social platform, using Flask framework and SQLite.
+> Hotaru是一个基于Flask框架和SQLite的在线即时通讯社交平台。
 
-### Guide
+### 教程
 
-## Design
+## 设计
