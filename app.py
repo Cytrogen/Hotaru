@@ -20,6 +20,7 @@ from config import login_required, encode_token, decode_token, generate_url, has
 app = Flask(__name__,
             static_url_path="/static",
             static_folder="static")
+app.config['SECRET_KEY'] = 'THISisAsecretKEYYYY'
 
 # Configure mail
 # 配置邮件发送
@@ -164,8 +165,11 @@ def chat(name):
     
     # Get chat record
     # 获取聊天记录
-    records = db.execute("SELECT * FROM chat WHERE channel_id = ? ORDER BY id DESC",
-                         channels[0]["id"])
+    try:
+        records = db.execute("SELECT * FROM chat WHERE channel_id = ? ORDER BY id DESC",
+                              channels[0]["id"])
+    except IndexError:
+        records = []  
     
     # Get chat-ers' profile icons
     # 获取每条聊天记录所对应的用户的头像
@@ -537,7 +541,7 @@ def signup():
         db.execute("INSERT INTO users (name, password, icon, email_address, confirmed) VALUES (?,?,?,?,?)",
                    request.form.get("username"),
                    hash,
-                   'Hotaru.png',
+                   '/static/icons/Hotaru.png',
                    email,
                    'False')
         
@@ -615,4 +619,4 @@ def logout():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
