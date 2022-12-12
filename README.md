@@ -72,3 +72,11 @@ This is the Final Project for CS50.
 5. `hotaru.db` is the database of the project
    - contains user information, chat logs, and channels
 </details>
+
+## TODO
+
+- [ ] Instant messaging function
+- [ ] Change username or password
+- [ ] Private chat
+- [ ] Change text styles and colors
+- [ ] Send images
