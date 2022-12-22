@@ -19,13 +19,14 @@
   <summary>Directory</summary>
   
 - [Hotaru](#hotaru)
-      - [Video Demo:](#video-demo)
+      - [Video Demo: Click me!](#video-demo-click-me)
   - [Description](#description)
-    - [Guide](#guide)
-  - [Design](#design)
+  - [Guide](#guide)
+  - [Project Structure](#project-structure)
+  - [TODO](#todo)
 </details>
 
-#### Video Demo: NOT YET
+***Video Demo: [Click me!](https://youtu.be/PMQW3F9mgek)***
 
 ## Description
 

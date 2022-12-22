@@ -25,7 +25,7 @@
   - [设计](#设计)
 </details>
 
-#### 视频DEMO：还未完成
+***视频DEMO（英文版）：[点我！](https://youtu.be/PMQW3F9mgek)***
 
 ## 简介
 
